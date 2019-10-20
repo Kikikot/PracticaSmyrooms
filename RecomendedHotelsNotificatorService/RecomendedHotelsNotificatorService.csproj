@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Templates\RecomendationsHotelTypeTemplate - HotelSpa.html" />
+    <None Remove="Templates\RecomendationsHotelTypeTemplate - OnlyAdults.html" />
+    <None Remove="Templates\RecomendationsHotelTypeTemplate - Premium.html" />
+    <None Remove="Templates\RecomendationsMailTemplate.html" />
+    <None Remove="Templates\RecomendationsRegionTemplate.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\ExternalLibraries\ExternalLibraries.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\RecomendationsHotelTypeTemplate - Premium.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\RecomendationsHotelTypeTemplate - HotelSpa.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\RecomendationsHotelTypeTemplate - OnlyAdults.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\RecomendationsRegionTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\RecomendationsMailTemplate.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
